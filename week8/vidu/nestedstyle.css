@@ -1,0 +1,25 @@
+.container > li {
+    color: blue;
+}
+
+li[kieu="dacbiet"]:hover {
+    color: green;
+}
+
+li[kieu="dacbiet"]::after {
+    content: "Dac biet";
+}
+li[kieu="dacbiet"]::before {
+    content: "<<<";
+}
+
+li:nth-child(odd)::before {
+    content: "Le: ";
+}
+li:nth-child(even)::before {
+    content: "Chan: ";
+}
+
+h1, h2 p {
+    color: red; 
+}
