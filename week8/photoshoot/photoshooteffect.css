@@ -2,7 +2,7 @@ body {
     font-family: arial, sans-serif;
     color: #fcfcfc;
     background-color: #355664;
-    width: 960px;
+    width: 1000px;
     margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@ figure + p {
 
 img {
     width: 500px;
-    height: 300px;
+    height: 250px;
     border: none;
 }
 
@@ -97,7 +97,8 @@ article {
 figure {
     border: 3px solid #142830;
     float: right;
-    height: 300px;
+    margin: 0 0 10px 15px;
+    height: 250px;
     width: 500px;
     margin-left: 15px;
 }
