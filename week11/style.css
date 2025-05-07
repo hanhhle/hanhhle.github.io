@@ -5,6 +5,11 @@
     font-style: italic;
 }
 
+.foot {
+    align: center;
+    text-align: center;
+}
+
 .textbox {
     width: 230px;
     border: 1px solid #777777;
