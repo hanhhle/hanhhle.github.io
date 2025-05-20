@@ -3,6 +3,14 @@ body {
     padding: 0;
     background: #ccc;
 }
+header > h1 {
+    font-size: 25px;
+}
+
+header > p {
+    font-size: 12px;
+    font-style: italic;
+}
 
 nav {
     background: rgb(156, 110, 110);
@@ -41,5 +49,12 @@ article header:hover {
 }
 
 subtitle {
-    font-size: 20px;
+    font-size: 15px;
 }
+
+footer {
+    background: #444;
+    color: #fff;
+    text-align: center;
+}
+
