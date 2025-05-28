@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ ::before</title>
+<style>
+.my-list li {
+list-style: none;
+margin-bottom: 10px;
+padding-left: 20px; 
+position: relative;
+}
+
+.my-list li::before {
+    content: ">> "; /* Nội dung được chèn vào trước mỗi li */
+    color: blue;
+    font-weight: bold;
+    position: absolute; /* Định vị tuyệt đối so với li */
+    left: 0;
+}
+
+.product-price::before {
+    content: "Giá: ";
+    color: green;
+    font-style: italic;
+}
+</style>
+
+</head>
+<body>
+    <ul class="my-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p class="product-price">1.500.000 VNĐ</p>
+
+</body> 
+</html>
