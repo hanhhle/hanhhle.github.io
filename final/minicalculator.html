@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mini Caculator</title>
+        <script language="JavaScript">
+            function Calculate(){
+                var a = document.frmCal.txta;
+                var b = document.frmCal.txtb;
+                var o = document.frmCal.txto;
+                var r = document.frmCal.txtr;
+
+                var numberFormat = /^[+-]?\d+(\.\d+)?$/;
+
+                if(numberFormat.test(a.value) == false) {
+                    alert("Please enter a valid number of a.");
+                    a.focus();
+                } else if(numberFormat.test(b.value) == false){
+                    alert("Please enter a valid number of b.");
+                    b.focus();
+                } else if ((o.value=="/" || o.value=="%") && parseInt(b.value)==0){
+                    alert("b cannot be zero for division or modulo operations.");
+                    b.focus();
+                    r.value = "";
+                } else
+                    r.value = eval(a.value + o.value + b.value);
+            }
+        </script>
+    </head>
+
+<body>
+
+</body>
+</html>
